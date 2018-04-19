@@ -1,0 +1,18 @@
+- !group application_a
+- !group application_b
+- !user bob
+- !user sue
+- !user randy
+- !user frank
+
+- !grant
+  role: !group application_a
+  members:
+    - !user sue
+    - !user bob
+
+- !grant
+  role: !group application_b
+  members:
+    - !user randy
+    - !user frank

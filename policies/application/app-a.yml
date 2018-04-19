@@ -1,0 +1,27 @@
+- !policy
+  id: application_a
+  body:
+  - &variables
+    - !variable database/username
+    - !variable database/password
+
+  - !layer
+  - !host-factory
+    layer: [ !layer ]
+
+  - !group secret-users
+  - !group secret-admins
+
+  - !permit
+    role: !group secret-users
+    privileges: [ read, execute ]
+    resources: *variables
+
+  - !permit
+    role: !group secret-admins
+    privileges: [ update ]
+    resources: *variables
+
+  - !grant
+    member: !group secrets-admins
+    role: !group secrets-users
