@@ -23,5 +23,5 @@
     resources: *variables
 
   - !grant
-    member: !group secrets-admins
-    role: !group secrets-users
+    member: !group secret-admins
+    role: !group secret-users
