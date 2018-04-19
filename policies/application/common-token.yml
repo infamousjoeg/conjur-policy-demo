@@ -4,6 +4,8 @@
   - &variables
     - !variable token
 
+  - !layer 
+
   - !group secret-users
 
   - !permit
