@@ -1,0 +1,22 @@
+- !policy
+  id: common_tokens
+  body:
+  - &variables
+    - !variable token
+
+  - !group secret-users
+
+  - !permit
+    role: !group secret-users
+    privileges: [ read, execute ]
+    resources: *variables
+
+  - !permit 
+    role: !layer application_a
+    privileges: [ read, execute]
+    resources: *variables
+
+  - !permit
+    role: !layer application_b
+    privileges: [ read, execute]
+    resources: *variables

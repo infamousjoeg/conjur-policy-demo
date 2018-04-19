@@ -2,16 +2,6 @@
   member: !group application_a/secret-users
   role: !group common_tokens/secret-users
 
-- !permit 
-  role: !layer application_a
-  privileges: [ read, execute]
-  resources: *variables
-
-- !permit
-  role: !layer application_b
-  privileges: [ read, execute]
-  resources: *variables
-
 - !grant
   member: !group application_b/secret-users
   role: !group common_tokens/secret-users
