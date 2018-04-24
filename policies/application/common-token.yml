@@ -6,17 +6,17 @@
 
   - !group secret-users
 
-  - !permit
+  - !deny
     role: !group secret-users
     privileges: [ read, execute ]
     resources: *variables
 
-  - !permit 
+  - !deny 
     role: !layer /application_a
     privileges: [ read, execute]
     resources: *variables
 
-  - !permit
+  - !deny
     role: !layer /application_b
     privileges: [ read, execute]
     resources: *variables

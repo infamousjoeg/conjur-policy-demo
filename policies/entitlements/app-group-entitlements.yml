@@ -1,7 +1,0 @@
-- !grant
-  member: !group application_a
-  role: !group application_a/secret-admins
-
-- !grant
-  member: !group application_b
-  role: !group application_b/secret-admins

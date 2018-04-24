@@ -1,13 +1,6 @@
 # Top-level policy file
 
-# Users policy 
-- !include users/users-policy.yml
-
 # Application policies 
 - !include application/app-a.yml
 - !include application/app-b.yml
 - !include application/common-token.yml
-
-# Entitlement policies 
-- !include entitlements/shared-token.yml
-- !include entitlements/app-group-entitlements.yml

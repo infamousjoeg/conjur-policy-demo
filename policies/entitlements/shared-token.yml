@@ -1,7 +1,0 @@
-- !grant
-  member: !group application_a/secret-users
-  role: !group common_tokens/secret-users
-
-- !grant
-  member: !group application_b/secret-users
-  role: !group common_tokens/secret-users
