@@ -13,3 +13,5 @@ On the `master` branch is the policy that grants entitlements and members to rol
 ## Deny-All Branch Policy
 
 On the `deny-all` branch is the policy that denies access to all secrets within the policies.  This branch's policies may be loaded using the same means as above in the case of breach, suspected compromise, or any malicious attempt to gain access to the secrets.
+
+[Click here to navigate to the `deny-all` branch](https://github.com/infamousjoeg/conjur-policy-demo/tree/deny-all)
